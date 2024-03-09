@@ -1,0 +1,104 @@
+{
+  "banner": [
+    {
+      "id": 1,
+      "image": "http://example.com/banner1.jpg",
+      "link": "http://example.com/banner1_link",
+      "title": "Banner 1 title"
+    },
+    {
+      "id": 2,
+      "image": "http://example.com/banner2.jpg",
+      "link": "http://example.com/banner2_link",
+      "title": "Banner 2 title"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "image": "http://example.com/card1.jpg",
+      "link": "http://example.com/card1_link",
+      "title": "Card 1 title",
+      "description": "Card 1 description",
+      "extra": "Card 1 extra info",
+      "price_info": "Card 1 price info"
+    },
+    {
+      "id": 2,
+      "image": "http://example.com/card2.jpg",
+      "link": "http://example.com/card2_link",
+      "title": "Card 2 title",
+      "description": "Card 2 description",
+      "extra": "Card 2 extra info",
+      "price_info": "Card 2 price info"
+    },
+    {
+      "id": 3,
+      "image": "http://example.com/card3.jpg",
+      "link": "http://example.com/card3_link",
+      "title": "Card 3 title",
+      "description": "Card 3 description",
+      "extra": "Card 3 extra info",
+      "price_info": "Card 3 price info"
+    },
+    {
+      "id": 4,
+      "image": "http://example.com/card4.jpg",
+      "link": "http://example.com/card4_link",
+      "title": "Card 4 title",
+      "description": "Card 4 description",
+      "extra": "Card 4 extra info",
+      "price_info": "Card 4 price info"
+    }
+  ],
+  "contactUs": {
+    "phone": "1234567890",
+    "email": "abcd@mail.com",
+    "address": "123, Example Street, City, Country"
+  },
+  "footer": {
+    "aboutUs": "About us",
+    "termsAndConditions": "Terms and conditions",
+    "privacyPolicy": "Privacy policy",
+    "returnPolicy": "Return policy"
+  },
+  "SocialMedia": {
+    "facebook": "http://facebook.com",
+    "twitter": "http://twitter.com",
+    "instagram": "http://instagram.com",
+    "pinterest": "http://pinterest.com"
+  },
+  "YoutubeEmbed": [
+    {
+      "id": 1,
+      "embed": "https://www.youtube.com/embed/abc123"
+    },
+    {
+      "id": 2,
+      "embed": "https://www.youtube.com/embed/def456"
+    }
+  ],
+  "main_Details": [
+    {
+      "id": 1,
+      "title": "Main Details 1",
+      "description": "Main Details 1 description"
+    },
+    {
+      "id": 2,
+      "title": "Main Details 2",
+      "description": "Main Details 2 description"
+    },
+    {
+      "id": 3,
+      "title": "Main Details 3",
+      "description": "Main Details 3 description"
+    },
+    {
+      "id": 4,
+      "title": "Main Details 4",
+      "description": "Main Details 4 description"
+    }
+  ],
+  "locations": ["Location 1", "Location 2", "Location 3", "Location 4"]
+}
