@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Stay Connected</h3>
           <p className="text-sm">
-            Don't miss out on our latest updates, promotions, and more!
+            Don&apos;t miss out on our latest updates, promotions, and more!
           </p>
         </div>
         <form
