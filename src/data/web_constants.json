@@ -19,36 +19,114 @@
       "image": "http://example.com/card1.jpg",
       "link": "http://example.com/card1_link",
       "title": "Card 1 title",
-      "description": "Card 1 description",
+      "slug": "card-1-title",
+      "description": "Card 1 description <br />After making the necessary changes, test your application thoroughly to ensure that the functionality is still correct and that the warning has been resolved.",
       "extra": "Card 1 extra info",
-      "price_info": "Card 1 price info"
+      "price_info": "Card 1 price info",
+      "content":[
+        {
+          "title": "Thar Desert Safari  45678",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari 1</div>"
+        }
+      ]
     },
     {
       "id": 2,
       "image": "http://example.com/card2.jpg",
       "link": "http://example.com/card2_link",
       "title": "Card 2 title",
-      "description": "Card 2 description",
+      "description": "Card 2 description<br /> By addressing the warning as described above, you can ensure that your code remains compatible with future changes to JavaScript module syntax and adhere to best practices.",
       "extra": "Card 2 extra info",
-      "price_info": "Card 2 price info"
+      "slug": "card-1-title",
+      "price_info": "Card 2 price info",
+      "content":[
+        {
+          "title": "Thar Desert Safari",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari 2</div>"
+        }
+      ]
     },
     {
       "id": 3,
       "image": "http://example.com/card3.jpg",
       "link": "http://example.com/card3_link",
       "title": "Card 3 title",
-      "description": "Card 3 description",
+      "description": "Card 3 description <br/>  To address the warning and future-proof your code, you should ensure that the module you're importing from Cards.tsx exports only a default export.",
       "extra": "Card 3 extra info",
-      "price_info": "Card 3 price info"
+      "slug": "card-1-title",
+      "price_info": "Card 3 price info",
+      "content":[
+        {
+          "title": "Thar Desert Safari",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari 3</div>  "
+        }
+      ]
     },
     {
       "id": 4,
       "image": "http://example.com/card4.jpg",
       "link": "http://example.com/card4_link",
       "title": "Card 4 title",
-      "description": "Card 4 description",
+      "description": "Card 4 description <br /> The warning is indicating that in your file Cards.tsx, you're importing a named export (cards) from a module that only exports a default export. Currently, JavaScript allows both named exports and a default export from a single module.",
       "extra": "Card 4 extra info",
-      "price_info": "Card 4 price info"
+      "slug": "card-1-title",
+      "price_info": "Card 4 price info",
+      "content":[
+        {
+          "title": "Desert Adventure -45678",
+          "description": "Embark on a thrilling desert adventure in Jaisalmer. Explore the golden sand dunes, ride camels, and witness mesmerizing sunsets over the vast desert landscape.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Desert Adventure</div>"
+        },
+        {
+          "title": "Historic Forts",
+          "description": "Discover the rich history of Jaisalmer through its magnificent forts. Visit the iconic Jaisalmer Fort, also known as Sonar Quila, and explore its intricate architecture and fascinating stories.",
+          "content": "<div class=\"h-full w-full  flex items-center justify-center text-white\"><img src=\"/jaisalmer-fort.jpg\" width=\"300\" height=\"300\" class=\"h-full w-full object-cover\" alt=\"Jaisalmer Fort\" /></div>"
+        },
+        {
+          "title": "Cultural Experience",
+          "description": "Immerse yourself in the vibrant culture of Jaisalmer. Witness traditional Rajasthani dance performances, indulge in local cuisine, and shop for exquisite handicrafts in the bustling markets.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white\">Cultural Experience</div>"
+        },
+        {
+          "title": "Thar Desert Safari",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari</div>"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "quote":
+        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+      "name": "Charles Dickens",
+      "title": "A Tale of Two Cities"
+    },
+    {
+      "quote":
+        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      "name": "William Shakespeare",
+      "title": "Hamlet"
+    },
+    {
+      "quote": "All that we see or seem is but a dream within a dream.",
+      "name": "Edgar Allan Poe",
+      "title": "A Dream Within a Dream"
+    },
+    {
+      "quote":
+        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+      "name": "Jane Austen",
+      "title": "Pride and Prejudice"
+    },
+    {
+      "quote":
+        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+      "name": "Herman Melville",
+      "title": "Moby-Dick"
     }
   ],
   "contactUs": {

@@ -1,21 +1,55 @@
 "use client";
-import React, { useState } from "react";
-import { cn } from "@/utils/cn";
-import logo from "@/assets/logo.png";
-import Navbar from "@/components/Navbar";
-const Header = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState<string | null>(null);
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  // Mobile Responsive
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Adjust the threshold as per your requirements
+    };
+
+    handleResize(); // Call initially to set the initial state
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div
-      className={cn("fixed top-5 inset-x-0 max-w-2xl mx-auto z-20 flex left-0 ", className)}
-    >
-      {/* Left side logo  */}
-      
-      {/* Right side menu Navigation menu */}
-      <div className="relative inset-y-0 right-0">
-        <Navbar />
-      </div>
-    </div>
+    <>
+      {
+            isMobile?(
+              <div className=" fixed top-2 right-5 w-24 rounded-lg  z-50 object-cover">
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={80}
+                height={10}
+                className="w-full h-16  rounded-lg"
+                priority={true}
+              />
+            </Link>
+          </div>
+            ):(
+              <div className=" fixed top-4 w-24 rounded-lg left-16 z-50 object-cover m-4 mt-0">
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={80}
+                height={10}
+                className="w-full h-16  rounded-lg"
+                priority={true}
+              />
+            </Link>
+          </div>
+            )
+}
+    </>
   );
 };
 

@@ -1,11 +1,12 @@
 "use client";
-import React, { useState, useEffect ,useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import { useClickAway } from "react-use";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
 import Link from "next/link";
+import Image from "next/image";
 // import logo from "@/assets/logo.png";
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
@@ -46,27 +47,18 @@ function RegularNavbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "fixed top-2 inset-x-2 max-w-auto w-11/12  mx-auto z-20 ",
+        "fixed top-2 inset-x-2 max-w-auto w-9/12   px-4  mx-auto z-50 ",
         className
       )}
     >
-      {/* */}
       <Menu setActive={setActive}>
-        <img
-          src="/logo.png"
-          className=" h-8 w-16 md:h-[2.5rem] rounded-xl left-0 object-cover "
-          alt="logo"
-          style={{
-            float: "left",
-          }}
-        ></img>
         <Link
-          href="#"
+          href="/"
           className=" text-xl hover:text-blue-500 hover:underline default:text-blue-500"
         >
           <MenuItem setActive={setActive} active={active} item="Home" />
         </Link>
-        <Link href="#" className=" text-xl hover:text-blue-500 hover:underline">
+        <Link href="/tours" className=" text-xl hover:text-blue-500 hover:underline">
           <MenuItem setActive={setActive} active={active} item="Details" />
         </Link>
         <Link href="#" className=" text-xl hover:text-blue-500 hover:underline">
@@ -112,7 +104,7 @@ function HamburgerNavbar({ className }: { className?: string }) {
   useClickAway(node, () => {
     setOpen(false);
   });
-  
+
   return (
     <div ref={node}>
       <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
@@ -132,7 +124,10 @@ function HamburgerNavbar({ className }: { className?: string }) {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.1 * index, duration: 0.3 }}
                 >
-                  <a href={route.href} className="block text-white-800 font-semibold text-xl hover:text-blue-500 hover:underline">
+                  <a
+                    href={route.href}
+                    className="block text-white-800 font-semibold text-xl hover:text-blue-500 hover:underline"
+                  >
                     {route.title}
                   </a>
                 </motion.li>
@@ -143,7 +138,6 @@ function HamburgerNavbar({ className }: { className?: string }) {
       </AnimatePresence>
     </div>
   );
-
 }
 
 export default Navbar;
