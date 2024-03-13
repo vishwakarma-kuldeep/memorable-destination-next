@@ -60,7 +60,7 @@ const Slider = () => {
             borderRadius="1.75rem"
             className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
-            <Link href="tel:+91-1234567890"> Enquire now →</Link>
+            <Link href="tel:+91 7698249395"> Enquire now →</Link>
           </Button>
         </motion.div>
       </ImagesSlider>

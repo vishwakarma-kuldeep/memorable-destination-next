@@ -54,19 +54,19 @@ function Footer() {
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61555125752250"
               className="hover:text-white transition-colors duration-300"
             >
               Facebook
             </a>
-            <a
+            {/* <a
               href="#"
               className="hover:text-white transition-colors duration-300"
             >
               Twitter
-            </a>
+            </a> */}
             <a
-              href="#"
+              href="https://www.instagram.com/memorable_destination_?igsh=bGY0bGJhOHB6M202"
               className="hover:text-white transition-colors duration-300"
             >
               Instagram
@@ -80,8 +80,8 @@ function Footer() {
           <p>Sardar Patel Ring Rd,</p>
           <p>Nikol,Ahmedabad, Gujarat 382350</p>
 
-          <p>Email: naman@memorabledestination.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Email: admin@memorabledestination.com</p>
+          <p>Phone: +91 76982 49395/97</p>
         </div>
       </div>
       <p className="text-center text-xs pt-8">
