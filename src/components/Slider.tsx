@@ -52,13 +52,13 @@ const Slider = () => {
           }}
           className="z-50 flex flex-col justify-center items-center"
         >
-          <motion.div className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          <motion.div className="font-bold text-xl text-black md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             <TextGenerateEffect words={words} />
           </motion.div>
          
           <Button
             borderRadius="1.75rem"
-            className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="bg-white dark:bg-white text-black hover:bg-yellow hover:text-black hover:text-lg dark:text-black border-neutral-300 dark:border-blue hover:border-blue"
           >
             <Link href="tel:+91 7698249395"> Enquire now →</Link>
           </Button>

@@ -17,7 +17,7 @@ export function StickyScrollCard({cardId}: { cardId: number|any }) {
   const content: Card[] = filterCard?.content || [];
     
   return (
-    <div className="p-10 z-50">
+    <div className="p-10 z-50 dark:text-green bg-green">
       <StickyScroll content={content} />
     </div>
   );

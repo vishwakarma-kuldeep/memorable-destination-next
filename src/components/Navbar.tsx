@@ -41,63 +41,58 @@ const Navbar = ({ className }: { className?: string }) => {
     </div>
   );
 };
+const routes = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Details",
+    href: "/tours",
+  },
+  {
+    title: "Contact",
+    href: "#",
+  },
+  {
+    title: "About",
+    href: "#",
+  },
+  {
+    title: "Terms",
+    href: "#",
+  },
+];
 
 function RegularNavbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
       className={cn(
-        "fixed top-2 inset-x-2 max-w-auto w-9/12   px-4  mx-auto z-50 ",
+        "fixed top-2 inset-x-2 max-w-auto w-9/12 px-4 mx-auto z-50 text-black",
         className
       )}
     >
       <Menu setActive={setActive}>
-        <Link
-          href="/"
-          className=" text-xl hover:text-blue-500 hover:underline default:text-blue-500"
-        >
-          <MenuItem setActive={setActive} active={active} item="Home" />
-        </Link>
-        <Link href="/tours" className=" text-xl hover:text-blue-500 hover:underline">
-          <MenuItem setActive={setActive} active={active} item="Details" />
-        </Link>
-        <Link href="#" className=" text-xl hover:text-blue-500 hover:underline">
-          <MenuItem setActive={setActive} active={active} item="Contact" />
-        </Link>
-        <Link href="#" className=" text-xl hover:text-blue-500 hover:underline">
-          <MenuItem setActive={setActive} active={active} item="About" />
-        </Link>
-        <Link href="#" className=" text-xl hover:text-blue-500 hover:underline">
-          <MenuItem setActive={setActive} active={active} item="Terms" />
-        </Link>
+        {routes.map((route, index) => (
+          <Link
+            href={route.href}
+            key={index}
+            className=" text-xl hover:text-black hover:underline"
+          >
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item={route.title}
+            />
+          </Link>
+        ))}
       </Menu>
     </div>
   );
 }
 
 function HamburgerNavbar({ className }: { className?: string }) {
-  const routes = [
-    {
-      title: "Home",
-      href: "#",
-    },
-    {
-      title: "Details",
-      href: "#",
-    },
-    {
-      title: "Contact",
-      href: "#",
-    },
-    {
-      title: "About",
-      href: "#",
-    },
-    {
-      title: "Terms",
-      href: "#",
-    },
-  ];
   const [isOpen, setOpen] = useState(false);
   const node = useRef(null);
 
@@ -116,7 +111,7 @@ function HamburgerNavbar({ className }: { className?: string }) {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <ul className="bg-dark-500 p-5 space-y-3 text-white">
+            <ul className="bg-transparent p-5 space-y-3 text-black">
               {routes.map((route, index) => (
                 <motion.li
                   key={index}
@@ -126,7 +121,7 @@ function HamburgerNavbar({ className }: { className?: string }) {
                 >
                   <a
                     href={route.href}
-                    className="block text-white-800 font-semibold text-xl hover:text-blue-500 hover:underline"
+                    className="block text-black font-semibold text-xl hover:text-black hover:underline hover:bg-green px-5 rounded-lg"
                   >
                     {route.title}
                   </a>

@@ -22,27 +22,27 @@ const Header = () => {
     <>
       {
             isMobile?(
-              <div className=" fixed top-2 right-5 w-24 rounded-lg  z-50 object-cover">
+              <div className=" fixed top-0 right-5 w-32 rounded-lg  z-50 object-cover">
             <Link href="/">
               <Image
-                src="/logo.png"
+                src="/logo_svg_1.svg"
                 alt="logo"
                 width={80}
                 height={10}
-                className="w-full h-16  rounded-lg"
+                className="w-full h-20  rounded-lg bg-transparent scale-100 hover:scale-110 transition-transform duration-500 ease-in-out"
                 priority={true}
               />
             </Link>
           </div>
             ):(
-              <div className=" fixed top-4 w-24 rounded-lg left-16 z-50 object-cover m-4 mt-0">
+              <div className=" fixed  w-36 rounded-lg left-10 z-50 object-cover -top-5">
             <Link href="/">
               <Image
-                src="/logo.png"
+                src="/logo_svg_1.svg"
                 alt="logo"
-                width={80}
-                height={10}
-                className="w-full h-16  rounded-lg"
+                width={100}
+                height={20}
+                className="w-full h-full  rounded-lg bg-transparent scale-100 hover:scale-110 transition-transform duration-500 ease-in-out"
                 priority={true}
               />
             </Link>

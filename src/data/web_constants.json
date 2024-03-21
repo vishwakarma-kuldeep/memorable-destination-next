@@ -16,7 +16,7 @@
   "cards": [
     {
       "id": 1,
-      "image": "http://example.com/card1.jpg",
+      "image": "/logo.png",
       "link": "http://example.com/card1_link",
       "title": "Card 1 title",
       "slug": "card-1-title",
@@ -33,7 +33,7 @@
     },
     {
       "id": 2,
-      "image": "http://example.com/card2.jpg",
+      "image": "/logo.png",
       "link": "http://example.com/card2_link",
       "title": "Card 2 title",
       "description": "Card 2 description<br /> By addressing the warning as described above, you can ensure that your code remains compatible with future changes to JavaScript module syntax and adhere to best practices.",
@@ -50,7 +50,7 @@
     },
     {
       "id": 3,
-      "image": "http://example.com/card3.jpg",
+      "image": "/logo.png",
       "link": "http://example.com/card3_link",
       "title": "Card 3 title",
       "description": "Card 3 description <br/>  To address the warning and future-proof your code, you should ensure that the module you're importing from Cards.tsx exports only a default export.",
@@ -67,7 +67,7 @@
     },
     {
       "id": 4,
-      "image": "http://example.com/card4.jpg",
+      "image": "/logo.png",
       "link": "http://example.com/card4_link",
       "title": "Card 4 title",
       "description": "Card 4 description <br /> The warning is indicating that in your file Cards.tsx, you're importing a named export (cards) from a module that only exports a default export. Currently, JavaScript allows both named exports and a default export from a single module.",

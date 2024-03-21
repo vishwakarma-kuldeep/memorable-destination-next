@@ -12,7 +12,8 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
+  // darkMode: "class",
+  lightMode:'class',
   theme: {
     extend: {
       
@@ -33,7 +34,20 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors:{
+      transparent: 'transparent',
+      current: 'currentColor',
+      'light-green': '#D91A5D',
+      'white':'#f1f1f1',
+      'sky-blue': '#0099D2', 
+      'green': '#006651',
+      'blue': '#009BCC',
+      'black': '#000000',
+      'yellow': '#F0C507',
+      'silver': '#ecebff'
+    }
   },
+  // #D91A5D,  
   plugins: [addVariablesForColors],
 };
 

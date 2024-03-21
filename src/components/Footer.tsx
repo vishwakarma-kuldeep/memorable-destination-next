@@ -1,6 +1,29 @@
+import Link from "next/link";
 function Footer() {
+  const routes = [
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Details",
+      href: "/tours",
+    },
+    {
+      title: "Contact",
+      href: "#",
+    },
+    {
+      title: "About",
+      href: "#",
+    },
+    {
+      title: "Terms",
+      href: "#",
+    },
+  ];
   return (
-    <footer className="bg-black w-full text-gray-400 py-12">
+    <footer className="bg-white w-full text-black py-12">
       <div className="max-w-7xl  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
@@ -14,40 +37,18 @@ function Footer() {
           </p>
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
+          <h2 className="text-black text-lg font-semibold mb-4">Quick Links</h2>
           <ul>
-            <li>
-              <a
-                href="/"
-                className="hover:text-white transition-colors duration-300"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/tours"
-                className="hover:text-white transition-colors duration-300"
-              >
-                tours Details
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-white transition-colors duration-300"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-white transition-colors duration-300"
-              >
-                Contact
-              </a>
-            </li>
+            {routes.map((route, index) => (
+              <li key={index}>
+                <Link
+                  href={route.href}
+                  className="hover:underline hover:text-black transition-colors duration-300"
+                >
+                  {route.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div>
@@ -55,7 +56,7 @@ function Footer() {
           <div className="flex space-x-4">
             <a
               href="https://www.facebook.com/profile.php?id=61555125752250"
-              className="hover:text-white transition-colors duration-300"
+              className="hover:text-black hover:underline transition-colors duration-300"
             >
               Facebook
             </a>
@@ -67,7 +68,7 @@ function Footer() {
             </a> */}
             <a
               href="https://www.instagram.com/memorable_destination_?igsh=bGY0bGJhOHB6M202"
-              className="hover:text-white transition-colors duration-300"
+              className="hover:text-black hover:underline transition-colors duration-300"
             >
               Instagram
             </a>
@@ -80,8 +81,8 @@ function Footer() {
           <p>Sardar Patel Ring Rd,</p>
           <p>Nikol,Ahmedabad, Gujarat 382350</p>
 
-          <p>Email: admin@memorabledestination.com</p>
-          <p>Phone: +91 76982 49395/97</p>
+          <p >Email: <Link href="mail:admin@memorabledestination.com" className="hover:cursor-pointer hover:underline">admin@memorabledestination.com</Link> </p>
+          <p>Phone:<Link href="tel:+917698249395" className="hover:cursor-pointer hover:underline">+91 76982 49395/96/97</Link> </p>
         </div>
       </div>
       <p className="text-center text-xs pt-8">

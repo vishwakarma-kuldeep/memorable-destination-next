@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { cn } from "@/utils/cn";
 import React from "react";
 import { motion } from "framer-motion";
@@ -40,11 +40,13 @@ export const BackgroundGradient = ({
         style={{
           backgroundSize: animate ? "400% 400%" : undefined,
         }}
-        className={cn( //z-[1] is the z-index
-          "absolute inset-0 rounded-3xl  opacity-60 group-hover:opacity-100 blur-xl  transition duration-500",
-          " bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+        className={cn(
+          //z-[1] is the z-index
+          "absolute inset-0 rounded-3xl  opacity-60 group-hover:opacity-100 hover:bg-yellow blur-sm  transition duration-500",
+          " bg-black dark:bg-black hover:bg-yellow"
         )}
       />
+      {/* [radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)] */}
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
@@ -63,9 +65,10 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1]",
-          "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+          "bg-black dark:bg-black opacity-50 group-hover:opacity-100 blur-sm transition duration-500"
         )}
       />
+      {/* [radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)] */}
 
       <div className={cn("relative z-10", className)}>{children}</div>
     </div>

@@ -16,7 +16,7 @@ const CardOverLay = ({
 
   return (
     <div
-      className="fixed inset-0  w-auto h-full flex items-center justify-center  bg-gray-500  bg-opacity-20 max-h-full overflow-y-auto z-50 top-10"
+      className="fixed inset-0  w-auto h-full flex items-center justify-center  bg-gray-600  bg-opacity-20 max-h-full overflow-y-auto z-50 top-10"
       ref={overlayRef}
     >
       <div className="flex h-full w-full items-center justify-center ">
