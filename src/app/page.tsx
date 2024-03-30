@@ -4,7 +4,7 @@ import Testimonials from "@/components/Testimonials";
 // import Tours from "@/components/Tours";
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       <Slider />
       
       {/* <Tours /> */}

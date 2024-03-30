@@ -18,12 +18,12 @@
       "id": 1,
       "image": "/logo.png",
       "link": "http://example.com/card1_link",
-      "title": "Card 1 title",
+      "title": "The Golden City! Jaisalmer",
       "slug": "card-1-title",
-      "description": "Card 1 description <br />After making the necessary changes, test your application thoroughly to ensure that the functionality is still correct and that the warning has been resolved.",
+      "description": "With its royalforts and palaces, Jaisalmer holds the title of being India's Golden City. Jaisalmer, one of the most popular tourist destinations in Rajasthan, is known for its enormous sand castles, forts, and vibrant bazaars. The old city's winding lanes, lined with ornate Havelis, are hidden just below the surface of the city. You must visit Jaisalmer if your inner traveler is interested in seeing a place with a rich history, spiritual significance, and mouthwatering cuisine. Jaisalmer, which exists in the form of the Maharaja JaisalSingh, is one of the most visited historical sites in India, not just in Rajasthan. Jaisalmer is a truly captivating sight, perched amidst the amazing landscape of the vast Thar desert. Along with its beautiful surroundings, Jaisalmer offers thrilling adventure activities, desert safaris, unmatched hospitality, and mouthwatering cuisine! \n - Welcome to Jaisalmer | Visit Khaba Fort & Kuldhara Village \n - Desert Trek | Camel Safari | Cultural Night & Folk Music \n - Jaisalmer Local Sightseeing Visit Bada Bagh, Jaisalmer Fort, Gadisagar Lake, Patwon ki Haveli, Salam Singh ki Haveli, Jaisalmer War Museum. \n - Desert Camp Stay | Rajasthani Folk Dance | Bonfire | DJ Night \n - Breakfast | Check-out | Drop at Jaisalmer Railway Station / Bus Stand \n - 2 Nights Accommodation in Jaisalmer \n - Daily Breakfast \n -Cultural Program / Camel Safari / Jeep Safari \n -Traditional Rajasthani Dance, Fire Show & DJ with Garba Instructor or Guide Fees \n -We will provide transportation.",
       "extra": "Card 1 extra info",
       "price_info": "Card 1 price info",
-      "content":[
+      "content": [
         {
           "title": "Thar Desert Safari  45678",
           "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
@@ -40,7 +40,7 @@
       "extra": "Card 2 extra info",
       "slug": "card-1-title",
       "price_info": "Card 2 price info",
-      "content":[
+      "content": [
         {
           "title": "Thar Desert Safari",
           "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
@@ -57,7 +57,7 @@
       "extra": "Card 3 extra info",
       "slug": "card-1-title",
       "price_info": "Card 3 price info",
-      "content":[
+      "content": [
         {
           "title": "Thar Desert Safari",
           "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
@@ -74,7 +74,7 @@
       "extra": "Card 4 extra info",
       "slug": "card-1-title",
       "price_info": "Card 4 price info",
-      "content":[
+      "content": [
         {
           "title": "Desert Adventure -45678",
           "description": "Embark on a thrilling desert adventure in Jaisalmer. Explore the golden sand dunes, ride camels, and witness mesmerizing sunsets over the vast desert landscape.",
@@ -100,14 +100,12 @@
   ],
   "testimonials": [
     {
-      "quote":
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+      "quote": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
       "name": "Charles Dickens",
       "title": "A Tale of Two Cities"
     },
     {
-      "quote":
-        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      "quote": "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
       "name": "William Shakespeare",
       "title": "Hamlet"
     },
@@ -117,14 +115,12 @@
       "title": "A Dream Within a Dream"
     },
     {
-      "quote":
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+      "quote": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
       "name": "Jane Austen",
       "title": "Pride and Prejudice"
     },
     {
-      "quote":
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+      "quote": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
       "name": "Herman Melville",
       "title": "Moby-Dick"
     }

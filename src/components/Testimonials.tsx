@@ -6,7 +6,7 @@ const Testimonials = () => {
 
   return (
 
-    <div className="h-[30rem] rounded-md flex flex-col antialiased bg-white/80 dark:text-black dark:bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[20rem] rounded-md py-2  flex flex-col antialiased bg-white/80 dark:text-black dark:bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={cardData.testimonials}
         direction="right"

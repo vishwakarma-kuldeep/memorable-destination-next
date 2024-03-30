@@ -26,8 +26,8 @@ function Footer() {
     <footer className="bg-white w-full text-black py-12">
       <div className="max-w-7xl  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
-          <p className="mb-4">
+          <h2 className="text-black text-lg font-semibold mb-4">About Us</h2>
+          <p className="mb-4 text-justify">
             At Memorable Destination, we are passionate about crafting
             unforgettable travel experiences that resonate with the soul of
             every traveler. As a leading travel and tourism company, we
@@ -52,11 +52,11 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
-          <div className="flex space-x-4">
+          <h2 className="text-black text-lg font-semibold mb-4">Follow Us</h2>
+          <div className="flex  flex-col">
             <a
               href="https://www.facebook.com/profile.php?id=61555125752250"
-              className="hover:text-black hover:underline transition-colors duration-300"
+              className="hover:text-black hover:underline transition-colors duration-300 mb-2"
             >
               Facebook
             </a>
@@ -75,7 +75,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
+          <h2 className="text-black text-lg font-semibold mb-4">Contact Us</h2>
           <p> 210,Arth Business Centre (abc),</p>
           <p> Opposite Torrent Power Sub Station, </p>
           <p>Sardar Patel Ring Rd,</p>

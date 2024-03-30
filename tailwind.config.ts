@@ -41,7 +41,7 @@ const config: Config = {
       'white':'#f1f1f1',
       'sky-blue': '#0099D2', 
       'green': '#006651',
-      'blue': '#009BCC',
+      'blue': '#1a0ae0', //0e0587 1a0ae0
       'black': '#000000',
       'yellow': '#F0C507',
       'silver': '#ecebff'

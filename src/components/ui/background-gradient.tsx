@@ -42,8 +42,13 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           //z-[1] is the z-index
-          "absolute inset-0 rounded-3xl  opacity-60 group-hover:opacity-100 hover:bg-yellow blur-sm  transition duration-500",
-          " bg-black dark:bg-black hover:bg-yellow"
+          `absolute inset-0 rounded-3xl  opacity-60 group-hover:opacity-100  blur-sm  transition duration-500 
+          [
+            radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),
+            radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),
+            radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),
+            radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)
+          ]`
         )}
       />
       {/* [radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)] */}
@@ -65,7 +70,18 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1]",
-          "bg-black dark:bg-black opacity-50 group-hover:opacity-100 blur-sm transition duration-500"
+          `bg-blue
+           dark:bg-blue 
+           opacity-50 
+           group-hover:opacity-100 
+           blur-sm 
+           transition duration-500 
+          [
+            radial-gradient(circle_farthest-side_at_0_100%,yellow,transparent),
+            radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),
+            radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),
+            radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)
+          ]`
         )}
       />
       {/* [radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)] */}
