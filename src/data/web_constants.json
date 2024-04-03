@@ -36,8 +36,7 @@
       "image": "/logo.png",
       "link": "http://example.com/card2_link",
       "title": "Card 2 title",
-      "description": "Card 2 description<br /> By addressing the warning as described above, you can ensure that your code remains compatible with future changes to JavaScript module syntax and adhere to best practices.",
-      "extra": "Card 2 extra info",
+      "description": "<h1 className='font-bold text-center py-10'>Welcome to Jaisalmer!</h1> <ol type='number' className=' list-inside px-10 leading-relaxed'> <li> Visit Jaisalmer, India's Golden City with a rich history, spiritual significance, and mouthwatering cuisine </li> <li> Explore the famous Maharaja JaisalSingh, one of the most visited historical sites in India </li> <li> Enjoy the unique charm of Jaisalmer's Golden Fort, Patwon ki Haveli, and Salam Singh ki Haveli </li> <li> Experience the thrilling adventure activities, desert safaris, unmatched hospitality, and local culture </li> <li> Discover the enchanting Kuldhara Village, Desert National Park, and Jaisalmer War Museum </li> <li> Enjoy a desert camp stay with Rajasthani Folk Dance, bonfire, and DJ night </li> <li> Taste the local cuisine and try famous dishes like Dal Baati Churma, Rajasthani Kadhi, and Gatte ki Sabzi </li> </ol> <h2 className='text-3xl font-semibold text-center py-10'>Your Jaisalmer Tour Inclusions:</h2> <ol className='list-disc list-inside px-10'> <li>2 Nights Accommodation in Jaisalmer</li> <li>Daily Breakfast</li> <li>Sightseeing and desert camp stay</li> <li>Cultural activities, folk dance, and Rajasthani dinner</li> <li>Drop at Jaisalmer Railway Station / Bus Stand</li> </ol>",
       "slug": "card-1-title",
       "price_info": "Card 2 price info",
       "content": [

@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
+
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -13,10 +13,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   // darkMode: "class",
-  lightMode:'class',
+  lightMode: "class",
   theme: {
     extend: {
-      
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
@@ -34,20 +33,24 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
-    colors:{
-      transparent: 'transparent',
-      current: 'currentColor',
-      'light-green': '#D91A5D',
-      'white':'#f1f1f1',
-      'sky-blue': '#0099D2', 
-      'green': '#006651',
-      'blue': '#1a0ae0', //0e0587 1a0ae0
-      'black': '#000000',
-      'yellow': '#F0C507',
-      'silver': '#ecebff'
-    }
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      "light-green": "#D91A5D",
+      white: "#f1f1f1",
+      "sky-blue": "#0099D2",
+      green: "#006651",
+      blue: "#1a0ae0", //0e0587 1a0ae0
+      black: "#000000",
+      yellow: "#F0C507",
+      silver: "#ecebff",
+      violet: "#9500FF",
+      purple: "#7B1FA2",
+      pink:'#B1B1E7',
+      "light-blue":"#7F7FD7"
+    },
   },
-  // #D91A5D,  
+  
   plugins: [addVariablesForColors],
 };
 
@@ -56,11 +59,12 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
 
-
 export default config;
+
+

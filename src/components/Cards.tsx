@@ -64,7 +64,7 @@ const Cards = () => {
                         
                       }}
                   >
-                    {/* <Link href={"/tours/" + card.id} >  </Link> */}
+                  
                     View Details
                   </Button>
                 </div>
