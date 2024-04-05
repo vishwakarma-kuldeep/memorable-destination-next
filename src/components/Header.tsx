@@ -35,13 +35,13 @@ const Header = () => {
             </Link>
           </div>
             ):(
-              <div className=" fixed  w-36 rounded-lg left-10 z-50 object-cover -top-5">
+              <div className=" fixed  w-52 rounded-lg left-10 z-50 object-cover -top-12">
             <Link href="/">
               <Image
                 src="/logo_svg_1.svg"
                 alt="logo"
-                width={100}
-                height={20}
+                width={150}
+                height={30}
                 className="w-full h-full  rounded-lg bg-transparent scale-100 hover:scale-110 transition-transform duration-500 ease-in-out"
                 priority={true}
               />

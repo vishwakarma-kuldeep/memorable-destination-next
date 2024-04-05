@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
 import data from "@/data/web_constants.json";
-
+import ImageGallery from "./ImageGallery";
 export function SingleTourPage({ cardId }: { cardId: any }) {
   const filterCard = data.cards.find((card: { id: string | number | any }) => {
     // console.log(card.id);
@@ -16,9 +16,9 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Description",
       value: "description",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold bg-white bg-gradient-to-br from-pink to-light-blue">
+        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
           {/* <p>Description</p> */}
-          <h2>{filterCard?.title}</h2>
+          <h2 className="font-bold">{filterCard?.title}</h2>
           {/* <div className="text-[1rem] p-8">{filterCard?.description}</div> */}
           {
             filterCard?.description.includes('<') || filterCard?.description.includes('>') ? (
@@ -32,33 +32,32 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       ),
     },
     {
-      title: "Price",
-      value: "price",
+      title: "Services",
+      value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  md:text-4xl font-bold border-2 bg-white border:linear-gradient(light-blue,blue) ">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white ">
           <h2>{filterCard?.title}</h2>
           <div >
             Price starts From <b>Rs. {filterCard?.price_info}</b>
           </div>
-          {/* <DummyContent /> */}
+          
         </div>
       ),
     },
     {
-      title: "Playground",
-      value: "playground",
+      title: "Gallery",
+      value: "gallery",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold  bg-gradient-to-br from-pink to-light-blue">
-          <p>Playground tab</p>
-          <DummyContent />
-        </div>
+        <div className="w-full relative h-full rounded-2xl  text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
+          <ImageGallery />
+        </div>  
       ),
     },
     {
-      title: "Content",
-      value: "content",
+      title: "Reviews",
+      value: "reviews",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold bg-gradient-to-br from-pink to-light-blue">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
           <p>Content tab</p>
           <DummyContent />
         </div>
@@ -68,7 +67,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Random",
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-pink to-light-blue">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
           <p>Random tab</p>
           <DummyContent />
         </div>

@@ -70,8 +70,8 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1]",
-          `bg-blue
-           dark:bg-blue 
+          `bg-green
+          //  dark:bg-green 
            opacity-50 
            group-hover:opacity-100 
            blur-sm 

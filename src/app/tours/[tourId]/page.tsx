@@ -12,7 +12,7 @@ const SingleCard = ({params}:{
   const cardId = params.tourId;
  
   return (
-      <div className=" flex items-center justify-center bg-white text-black  h-full top-[2rem] overflow-scroll ">
+      <div className=" flex items-center justify-center bg-white text-black  h-full top-[2rem] ">
         {/* <StickyScrollCard cardId={cardId} /> */}
         <SingleTourPage cardId={cardId}/>
     </div>
