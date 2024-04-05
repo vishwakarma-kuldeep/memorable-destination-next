@@ -87,7 +87,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         animate={{
           opacity: 0.6,
         }}
-        className="relative flex  inset-0 h-full w-full bg-white opacity-60 z-10"
+        className="relative flex  inset-0 h-full w-full bg-white/0.7 opacity-60 z-10"
       />
       <motion.div
         initial={{

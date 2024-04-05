@@ -1,9 +1,9 @@
 import React from 'react'
-
+import ScrollGallery from '@/components/ScrollGallery'
 const Gallery = () => {
   return (
-    <div>
-        <h1>Gallery</h1>
+    <div className="bg-white h-screen">
+      <ScrollGallery />
     </div>
   )
 }

@@ -6,8 +6,12 @@ function Footer() {
       href: "/",
     },
     {
-      title: "Details",
+      title: "All Tours",
       href: "/tours",
+    },
+    {
+      title: "Gallery",
+      href: "/gallery",
     },
     {
       title: "Contact",
@@ -81,8 +85,24 @@ function Footer() {
           <p>Sardar Patel Ring Rd,</p>
           <p>Nikol,Ahmedabad, Gujarat 382350</p>
 
-          <p >Email: <Link href="mail:admin@memorabledestination.com" className="hover:cursor-pointer hover:underline">admin@memorabledestination.com</Link> </p>
-          <p>Phone:<Link href="tel:+917698249395" className="hover:cursor-pointer hover:underline">+91 76982 49395/96/97</Link> </p>
+          <p>
+            Email:{" "}
+            <Link
+              href="mail:admin@memorabledestination.com"
+              className="hover:cursor-pointer hover:underline"
+            >
+              admin@memorabledestination.com
+            </Link>{" "}
+          </p>
+          <p>
+            Phone:
+            <Link
+              href="tel:+917698249395"
+              className="hover:cursor-pointer hover:underline"
+            >
+              +91 76982 49395/96/97
+            </Link>{" "}
+          </p>
         </div>
       </div>
       <p className="text-center text-xs pt-8">

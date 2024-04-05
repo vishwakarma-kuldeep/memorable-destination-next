@@ -47,12 +47,16 @@ const routes = [
     href: "/",
   },
   {
-    title: "Details",
+    title: "All Tours",
     href: "/tours",
   },
   {
+    title:"Gallery",
+    href:"/gallery"
+  },
+  {
     title: "Contact",
-    href: "#",
+    href: "/contact",
   },
   {
     title: "About",
