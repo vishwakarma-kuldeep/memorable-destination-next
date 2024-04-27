@@ -12,28 +12,9 @@ const Slider = () => {
     "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
-  const slogans = [
-    `From Jaipur's Splendor to Jaisalmer's Sands:  Rajasthan Beckons!`,
-    `Jaipur's Majesty, Jaisalmer's Magic: Your Rajasthan Odyssey Begins.`,
-    `Experience Jaipur's Royalty, Wander Jaisalmer's Wilderness.`,
-    `Rajasthan Revelations:  Jaipur, Jaisalmer, and Beyond!`,
-    `Jaipur's Heritage, Jaisalmer's Mystique:  Explore Rajasthan's Soul.`,
-    `From Jaipur's Forts to Jaisalmer's Dunes:  Unravel Rajasthan's Beauty.`,
-    `Jaipur's Palaces, Jaisalmer's Caravans:  Discover Rajasthan's Riches.`,
-    `Rajasthan Rhapsody: Jaipur, Jaisalmer, and the Colors in Between.`,
-    `Journey Through Jaipur's Royalty,  Dance Across Jaisalmer's Sands.`,
-    `From Jaipur's Pink City  to Jaisalmer's Golden Hues:  Rajasthan's Splendor Awaits!`,
-  ];
-  const [slogan, setSlogan] = useState(slogans[0]);
+  
   const words = `From Jaipur's Pink City  to Jaisalmer's Golden Hues:  Rajasthan's Splendor Awaits!`;
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     const randomIndex = Math.floor(Math.random() * slogans.length);
-  //     setSlogan(slogans[randomIndex]);
-  //   }, 2000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
 
   return (
     <div>

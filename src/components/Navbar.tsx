@@ -14,7 +14,7 @@ const Navbar = ({ className }: { className?: string }) => {
   // Mobile Responsive
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust the threshold as per your requirements
+      setIsMobile(window.innerWidth < 468); // Adjust the threshold as per your requirements
     };
 
     handleResize(); // Call initially to set the initial state
@@ -27,7 +27,7 @@ const Navbar = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "fixed top-2 inset-x-2 max-w-auto w-11/12 mx-auto z-20 ",
+        "fixed top-2 inset-x-2 max-w-auto w-11/12 mx-auto z-20  text-black",
         className
       )}
     >
@@ -60,11 +60,11 @@ const routes = [
   },
   {
     title: "About",
-    href: "#",
+    href: "/about-us",
   },
   {
     title: "Terms",
-    href: "#",
+    href: "/terms",
   },
 ];
 
@@ -73,7 +73,7 @@ function RegularNavbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "fixed top-2 inset-x-2 max-w-auto w-9/12 px-4 mx-auto z-50 text-black",
+        "fixed top-2 inset-x-2 max-w-auto w-9/12 px-4 mx-auto z-50 text-black ",
         className
       )}
     >

@@ -13,8 +13,8 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
 
   const tabs = [
     {
-      title: "Description",
-      value: "description",
+      title: "Home",
+      value: "home",
       content: (
         <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
           {/* <p>Description</p> */}
@@ -32,8 +32,8 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Regular Packages",
+      value: "regular_packages",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white ">
           <h2>{filterCard?.title}</h2>
@@ -41,6 +41,17 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
             Price starts From <b>Rs. {filterCard?.price_info}</b>
           </div>
           
+        </div>
+      ),
+    }
+    ,
+    {
+      title: "Fixed Departure Packages",
+      value: "fixed_departure_packages",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
+          <p>Random tab</p>
+          <DummyContent />
         </div>
       ),
     },
@@ -63,16 +74,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
         </div>
       ),
     },
-    {
-      title: "Random",
-      value: "random",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
-          <p>Random tab</p>
-          <DummyContent />
-        </div>
-      ),
-    },
+    
   ];
 
   return (
