@@ -1,10 +1,13 @@
 "use client";
 import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 
+// type Card = {
+//   url:string;
+// };
 export const ParallaxScroll = ({
   images,
   className,
@@ -30,6 +33,24 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * fourth);
   const fourthPart = images.slice(3 * fourth);
 
+  // Overlay
+  const [selected, setSelected] = useState("");
+  const [lastSelected, setLastSelected] = useState("");
+  const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+
+  const handleClick = (url:string) => {
+    console.log(url);
+    setIsOverlayOpen(true);
+    setLastSelected(selected);
+    setSelected(url);
+  };
+
+  const handleOutsideClick = () => {
+    setIsOverlayOpen(false);
+    setLastSelected(selected);
+    setSelected("");
+  };
+
   return (
     <div
       className={cn("h-full items-start overflow-y-auto w-full", className)}
@@ -44,6 +65,7 @@ export const ParallaxScroll = ({
             <motion.div
               style={{ y: translateFirst }} // Apply the translateY motion value here
               key={"grid-1" + idx}
+              onClick={() => handleClick(el)}
             >
               <Image
                 src={el}
@@ -51,7 +73,6 @@ export const ParallaxScroll = ({
                 height="400"
                 width="400"
                 alt="thumbnail"
-                onClick={() => console.log("clicked")}
               />
             </motion.div>
           ))}
@@ -94,9 +115,25 @@ export const ParallaxScroll = ({
               />
             </motion.div>
           ))}
-          </div>
-        
+        </div>
       </div>
+      isOverlayOpen &&{" "}
+      <motion.div
+        onClick={handleOutsideClick}
+        className={cn(
+          "absolute h-[20rem] w-[20rem] left-[50%] top-50% bg-black opacity-0 z-50",
+          selected ? "pointer-events-auto" : "pointer-events-none"
+        )}
+        animate={{ opacity: selected ? 0.3 : 0 }}
+      >
+        <Image
+          src={selected}
+          className="h-full w-full object-cover rounded-lg z-50"
+          height="400"
+          width="400"
+          alt="thumbnail"
+        />
+      </motion.div>
     </div>
   );
 };

@@ -122,10 +122,64 @@
       "id": 6,
       "image": "/logo.png",
       "link": "http://example.com/card1_link",
+      "title": "Leh Ladakh - The Land of High Passes",
+      "slug": "leh-ladakh-the-land-of-high-passes",
+      "tiny_description": "Embark on a journey to Leh Ladakh, a land of rugged beauty, ancient monasteries, and high-altitude adventures.",
+      "description": "<div style='padding: 1rem;  border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Nestled within the lofty embrace of the Himalayas, Leh Ladakh is a canvas of unparalleled beauty, where every stroke of nature's brush is a masterpiece.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Towering snow-capped peaks stand sentinel over a landscape carved by time, their majesty mirrored in the serene depths of glacial lakes like Pangong and Nubra.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Here, the earth seems to exhale, revealing a tapestry of contrasts: verdant valleys cradle ancient monasteries, their ochre walls a testament to centuries of spiritual devotion.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Prayer flags dance on the breeze, weaving whispers of peace and enlightenment into the mountain air.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>In this land of infinite horizons, the sun paints the sky in hues of gold and crimson, casting a spell that transcends time and space.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>The rugged terrain, with its winding mountain passes and dramatic cliffs, beckons adventurers to explore its hidden treasures.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Amidst this grandeur, Leh Ladakh remains a sanctuary for the soul, where the beauty of the natural world inspires reverence and wonder, leaving an indelible mark on the hearts of all who wander its timeless paths.</p> </div>",
+      "extra": "add extra info here",
+      "price_info": "Card 1 price info",
+      "content": [
+        {
+          "title": "Thar Desert Safari  45678",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari 1</div>"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "/logo.png",
+      "link": "http://example.com/card1_link",
       "title": "Dubai - The City of Gold",
       "slug": "dubai-the-city-of-gold",
       "tiny_description": "Discover the opulence and grandeur of Dubai, a city where modernity meets tradition amidst a backdrop of luxury and extravagance.",
       "description": "<div style='padding: 1rem;  border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);' className='p-4 bg-white rounded-lg shadow-md'> <p className='text-lg text-gray-800'> Dubai, where the sun-kissed shores of pristine beaches meet the towering majesty of futuristic skyscrapers, painting a picture of unparalleled beauty and grandeur against the backdrop of the Arabian Gulf. </p> <p className='text-lg text-gray-800 mt-2'> <strong className='font-semibold'>Iconic Skyline:</strong> Dubai is renowned for its futuristic skyline dominated by iconic skyscrapers such as the Burj Khalifa, the tallest building in the world, which offers breathtaking panoramic views of the cityscape and beyond. </p> <p className='text-lg text-gray-800 mt-2'> <strong className='font-semibold'>Luxurious Beaches:</strong> Dubai boasts pristine beaches with crystal-clear waters and powdery white sands, including Jumeirah Beach and the Palm Jumeirah, where visitors can indulge in water sports, sunbathe, or simply enjoy the stunning views of the Arabian Gulf. </p> <p className='text-lg text-gray-800 mt-2'> <strong className='font-semibold'>Extravagant Architecture:</strong> From the sail-shaped Burj Al Arab to the stunning Dubai Marina skyline, Dubai's architecture is a testament to innovation and grandeur, with each structure pushing the boundaries of design and engineering. </p> <p className='text-lg text-gray-800 mt-2'> <strong className='font-semibold'>Vibrant Culture and Heritage:</strong> Despite its modernity, Dubai preserves its rich cultural heritage through attractions like the Al Fahidi Historical Neighbourhood, Dubai Museum, and traditional souks, where visitors can immerse themselves in the city's vibrant culture, history, and hospitality. </p> <p className='text-lg text-gray-800 mt-2'> <strong className='font-semibold'>Spectacular Desert Landscapes:</strong> Just outside the city, the Arabian Desert offers a stark yet stunning contrast to Dubai's urban landscape, with vast stretches of golden sands, towering dunes, and mesmerizing desert sunsets, providing unforgettable experiences like desert safaris, camel rides, and stargazing. </p> </div>",
+      "extra": "add extra info here",
+      "price_info": "Card 1 price info",
+      "content": [
+        {
+          "title": "Thar Desert Safari  45678",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari 1</div>"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "/logo.png",
+      "link": "http://example.com/card1_link",
+      "title": "Bali - The Island of Gods",
+      "slug": "bali-the-island-of-gods",
+      "tiny_description": " Explore the enchanting beauty of Bali, an island paradise where lush landscapes, pristine beaches, and vibrant culture converge in a harmonious blend.",
+      "description": "<div style='padding: 1rem;  border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Bali, an enchanting island paradise in Indonesia, unfolds like a dreamscape of natural wonders and cultural treasures.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Its lush landscapes are adorned with terraced rice fields that cascade down verdant hillsides, while majestic volcanoes pierce the sky with their towering presence.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>The island's coastline is fringed with pristine beaches of golden sand, where turquoise waters beckon with their gentle waves.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Ubud, nestled amidst emerald forests, is a sanctuary of art and spirituality, dotted with ancient temples and vibrant markets.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Bali's beauty is not just in its scenery but also in its rich cultural heritage, manifested in colorful ceremonies, traditional dances, and intricate temple architecture.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>With its warm hospitality and serene ambiance, Bali casts a spell on visitors, inviting them to surrender to its timeless allure and bask in its natural splendor.</p> </div>",
+      "extra": "add extra info here",
+      "price_info": "Card 1 price info",
+      "content": [
+        {
+          "title": "Thar Desert Safari  45678",
+          "description": "Experience the thrill of a Thar Desert safari in Jaisalmer. Traverse the rugged terrain in 4x4 vehicles, camp under the starry sky, and enjoy traditional Rajasthani hospitality amidst the dunes.",
+          "content": "<div class=\"h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white\">Thar Desert Safari 1</div>"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "/logo.png",
+      "link": "http://example.com/card1_link",
+      "title": "Thailand - The Land of Smiles",
+      "slug": "thailand-the-land-of-smiles",
+      "tiny_description": " Explore the enchanting beauty of Bali, an island paradise where lush landscapes, pristine beaches, and vibrant culture converge in a harmonious blend.",
+      "description": "<div style='padding: 1rem;  border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Thailand, a tapestry of natural wonders and cultural riches, captivates with its unparalleled beauty.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>From the emerald-green rice paddies of the countryside to the azure waters lapping against its palm-fringed shores, Thailand offers a symphony of breathtaking landscapes.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Towering limestone cliffs adorned with lush vegetation rise from the sea in Krabi, while the pristine beaches of Phuket invite relaxation under the tropical sun.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>In the north, mist-shrouded mountains and verdant forests hide ancient temples and hill tribe villages waiting to be explored.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Bangkok, the vibrant capital, pulsates with energy amidst its glittering temples, bustling markets, and towering skyscrapers.</p> <p style='font-size: 1.2rem; margin-bottom: 0.5rem;'>Thailand's beauty is not just in its landscapes but also in its rich cultural heritage, warm hospitality, and mouthwatering cuisine, making it a destination that leaves a lasting impression on all who visit.</p> </div>",
       "extra": "add extra info here",
       "price_info": "Card 1 price info",
       "content": [
