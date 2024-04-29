@@ -48,19 +48,19 @@ const Cards = () => {
                     </div>
                   )}
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-black dark:bg-white">
-                    {card.title}
+                    {card?.title}
                   </p>
                   <p className="text-sm text-black dark:text-black flex-grow mb-2">
-                    {card.description.length > 100
-                      ? card.description.slice(0, 100) + "..."
-                      : card.description}
+                    {card.tiny_description.length > 100
+                      ? card.tiny_description.slice(0, 100) + "..."
+                      : card.tiny_description}
                   </p>
                   <Button
                     borderRadius="1.75rem"
                     className=" py-2 dark:bg-white text-black dark:text-black  border-neutral-200 dark:border-slate-800 hover:bg-gray-500 transition duration-200 hover:bg-yellow hover:text-black hover:scale-110 hover:ease-in-out hover:text-[1rem] hover:border-black hover:shad  ow-lg hover:border-natural-400 hover:rounded-lg hover:transform hover:transition hover:duration-500"
                       onClick={(e:any)=>{
                         e.preventDefault()
-                        router.push("/tours/"+card.id)
+                        router.push("/tours/"+card.id,)
                         
                       }}
                   >

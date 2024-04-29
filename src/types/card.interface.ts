@@ -15,5 +15,6 @@ export interface CardsType {
     image?: string;
     link?: string;
     extra?: string;
+    tiny_description: string;
     content?: CardContent[];
   }

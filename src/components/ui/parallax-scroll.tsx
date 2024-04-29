@@ -21,12 +21,14 @@ export const ParallaxScroll = ({
   const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -200]);
   const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const translateThird = useTransform(scrollYProgress, [0, 1], [0, -200]);
+  const translateFourth = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
-  const third = Math.ceil(images.length / 3);
+  const fourth = Math.ceil(images.length / 4);
 
-  const firstPart = images.slice(0, third);
-  const secondPart = images.slice(third, 2 * third);
-  const thirdPart = images.slice(2 * third);
+  const firstPart = images.slice(0, fourth);
+  const secondPart = images.slice(fourth, 2 * fourth);
+  const thirdPart = images.slice(2 * fourth);
+  const fourthPart = images.slice(3 * fourth);
 
   return (
     <div
@@ -34,7 +36,7 @@ export const ParallaxScroll = ({
       ref={gridRef}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-40 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start  max-w-7xl mx-auto gap-10 py-40 px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">
@@ -79,6 +81,20 @@ export const ParallaxScroll = ({
             </motion.div>
           ))}
         </div>
+        <div className="grid gap-10">
+          {fourthPart.map((el, idx) => (
+            <motion.div style={{ y: translateFourth }} key={"grid-4" + idx}>
+              <Image
+                src={el}
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                height="400"
+                width="400"
+                alt="thumbnail"
+              />
+            </motion.div>
+          ))}
+          </div>
+        
       </div>
     </div>
   );

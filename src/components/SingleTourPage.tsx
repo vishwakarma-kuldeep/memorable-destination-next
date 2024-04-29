@@ -4,30 +4,35 @@ import Image from "next/image";
 import { Tabs } from "./ui/tabs";
 import data from "@/data/web_constants.json";
 import ImageGallery from "./ImageGallery";
+
+
 export function SingleTourPage({ cardId }: { cardId: any }) {
+  
   const filterCard = data.cards.find((card: { id: string | number | any }) => {
     // console.log(card.id);
     return card.id === +cardId;
   });
-//   console.log(filterCard);
+  //   console.log(filterCard);
 
   const tabs = [
     {
       title: "Home",
       value: "home",
       content: (
-        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
+        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-2xl  bg-white bg-gradient-to-br from-yellow to-white">
           {/* <p>Description</p> */}
           <h2 className="font-bold">{filterCard?.title}</h2>
           {/* <div className="text-[1rem] p-8">{filterCard?.description}</div> */}
-          {
-            filterCard?.description.includes('<') || filterCard?.description.includes('>') ? (
-                <div dangerouslySetInnerHTML={{ __html: filterCard?.description }} className="text-lg" />
-                ) : (
-                <div>{filterCard?.description}</div>
-            )
-          }
-
+          {filterCard?.description.includes("<") ||
+          filterCard?.description.includes(">") ? (
+           
+             <div
+              dangerouslySetInnerHTML={{ __html: filterCard?.description }}
+              className="text-[1.2rem] p-8 "
+            />
+          ) : (
+            <div>{filterCard?.description}</div>
+          )}
         </div>
       ),
     },
@@ -35,16 +40,24 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Regular Packages",
       value: "regular_packages",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white ">
-          <h2>{filterCard?.title}</h2>
-          <div >
-            Price starts From <b>Rs. {filterCard?.price_info}</b>
+        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-2xl   bg-gradient-to-br from-yellow to-white ">
+          <h2 className="font-bold">{filterCard?.title}</h2>
+          <div>
+            {/* Price starts From <b>Rs. {filterCard?.price_info}</b> */}
+            {filterCard?.price_info.includes("<") ||
+          filterCard?.price_info.includes(">") ? (
+           
+             <div
+              dangerouslySetInnerHTML={{ __html: filterCard?.price_info }}
+              className="text-[1.2rem] p-8 "
+            />
+          ) : (
+            <div>{filterCard?.price_info}</div>
+          )}
           </div>
-          
         </div>
       ),
-    }
-    ,
+    },
     {
       title: "Fixed Departure Packages",
       value: "fixed_departure_packages",
@@ -61,7 +74,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       content: (
         <div className="w-full relative h-full rounded-2xl  text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
           <ImageGallery />
-        </div>  
+        </div>
       ),
     },
     {
@@ -74,7 +87,6 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
         </div>
       ),
     },
-    
   ];
 
   return (
