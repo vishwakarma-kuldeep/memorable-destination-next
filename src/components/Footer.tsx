@@ -19,11 +19,11 @@ function Footer() {
     },
     {
       title: "About",
-      href: "#",
+      href: "/about-us",
     },
     {
       title: "Terms",
-      href: "#",
+      href: "/terms",
     },
   ];
   return (
