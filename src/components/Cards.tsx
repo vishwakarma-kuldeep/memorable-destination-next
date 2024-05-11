@@ -26,8 +26,8 @@ const Cards = () => {
         </div>
       </div>
       <div className="mt-10 mx-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
-          {cardData.cards.map((card: CardsType, index: number) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 justify-center">
+          {cardData.cards.slice(0,8).map((card: CardsType, index: number) => (
             <div key={card.id} className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px]  dark:bg-white bg-white overflow-hidden h-full  max-w-sm">
                 <div className="p-2 sm:p-6 flex flex-col items-center text-center flex-grow">

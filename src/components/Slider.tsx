@@ -42,7 +42,9 @@ const Slider = () => {
             borderRadius="1.75rem"
             className="bg-white dark:bg-white text-black hover:bg-yellow hover:text-black hover:text-lg dark:text-black border-neutral-300 dark:border-blue hover:border-blue"
           >
-            <Link href="tel:+91 7698249395"> Enquire now →</Link>
+            <Link href="tel:+91 7698249395" onClick={()=>{
+              window.open("tel:+91 7698249395")
+            }}> Enquire now →</Link>
           </Button>
         </motion.div>
       </ImagesSlider>

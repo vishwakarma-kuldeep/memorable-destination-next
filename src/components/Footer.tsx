@@ -103,7 +103,8 @@ function Footer() {
               +91 76982 49395/96/97
             </Link>{" "}
           </p>
-        </div>
+        </div>   
+        
       </div>
       <p className="text-center text-xs pt-8">
         © 2024 Memorable Destination. All rights reserved.

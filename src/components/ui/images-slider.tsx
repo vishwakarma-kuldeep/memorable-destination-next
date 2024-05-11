@@ -46,6 +46,7 @@ export const ImagesSlider = ({
       return new Promise((resolve, reject) => {
         const img = new Image();
         img.src = image;
+        img.sizes="(min-width: 808px) 50vw, 100vw"
         img.onload = () => resolve(image);
         img.onerror = reject;
       });
@@ -144,6 +145,7 @@ export const ImagesSlider = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
+            sizes="(min-width: 420px, min-height:600px) 50vw, 100vw"
             className="image h-full w-full absolute inset-0 object-cover object-center"
           />
         </AnimatePresence>

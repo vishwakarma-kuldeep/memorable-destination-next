@@ -40,7 +40,7 @@ export const Tabs = ({
   // Mobile Responsive
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust the threshold as per your requirements
+      setIsMobile(window.innerWidth < 438); // Adjust the threshold as per your requirements
     };
 
     handleResize(); // Call initially to set the initial state
@@ -53,10 +53,10 @@ export const Tabs = ({
 
   return (
     <>
-     { isMobile?(
+     {/* { isMobile?(
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto no-visible-scrollbar max-w-full w-full",
+          "grid grid-cols-5 gap-4 items-center justify-center [perspective:1000px] relative  no-visible-scrollbar max-w-full w-full text-nowrap  text-black xs:grid-cols-3",
           containerClassName
         )}
       >
@@ -88,10 +88,10 @@ export const Tabs = ({
           </button>
         ))}
       </div>
-      ):(
+       ):(  */}
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative  no-visible-scrollbar max-w-full w-full",
+          isMobile?"grid grid-cols-1 gap-5 xs:grid-cols-4 md:grid-cols-3 lg:grid-cols-3  items-center justify-start [perspective:1000px] relative   max-w-full w-full font-crimson -py-10 text-nowrap   text-black":"grid grid-cols-2 gap-5 xs:grid-cols-4 md:grid-cols-3 lg:grid-cols-3  items-center justify-start [perspective:1000px] relative   max-w-full w-full font-crimson py-0 text-nowrap   text-black",
           containerClassName
         )}
       >
@@ -119,17 +119,17 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block  dark:text-black">{tab.title}</span>
+            <span className="relative block  dark:text-black font-semibold">{tab.title}</span>
           </button>
         ))}
       </div>
-      )}
+       {/* )}  */}
       <FadeInDiv
         tabs={tabs}
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-16", contentClassName)}
+        className={cn("mt-10", contentClassName)}
       />
     </>
   );
@@ -150,22 +150,22 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-[45rem] min-h-[45rem]" >
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
           layoutId={tab.value}
           style={{
             scale: 1 - idx * 0.1,
-            top: hovering ? idx * -50 : 0,
+            top: hovering ? idx * -20 : 0,
             zIndex: -idx,
             opacity: idx < 3 ? 1 - idx * 0.1 : 0,
           }}
           animate={{
-            y: isActive(tab) ? [0, 50, 0] : 0,
+            y: isActive(tab) ? [0, 20, 0] : 0,
           }}
           className={cn(
-            "w-full h-full absolute top-0 left-0 overflow-auto",
+            "w-full h-full absolute top-0 left-0 overflow-auto sm:w-full sm:h-full rounded-2xl p-10 text-xl md:text-2xl  bg-white bg-gradient-to-br from-yellow to-white min-h-[20rem]",
             className
           )}
         >

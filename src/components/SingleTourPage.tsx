@@ -19,7 +19,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Home",
       value: "home",
       content: (
-        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-2xl  bg-white bg-gradient-to-br from-yellow to-white">
+        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-2xl  bg-white bg-gradient-to-br from-yellow to-white min-h-[20rem]">
           {/* <p>Description</p> */}
           <h2 className="font-bold">{filterCard?.title}</h2>
           {/* <div className="text-[1rem] p-8">{filterCard?.description}</div> */}
@@ -40,7 +40,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Regular Packages",
       value: "regular_packages",
       content: (
-        <div className="w-full md:overflow-auto  relative h-auto rounded-2xl p-10 text-xl md:text-2xl   bg-gradient-to-br from-yellow to-white ">
+        <div className="w-full md:overflow-auto  relative h-[45rem] rounded-2xl p-10 text-xl md:text-2xl   bg-gradient-to-br from-yellow to-white min-h-[20rem] ">
           <h2 className="font-bold">{filterCard?.title}</h2>
           <div>
             {/* Price starts From <b>Rs. {filterCard?.price_info}</b> */}
@@ -62,9 +62,12 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Fixed Departure Packages",
       value: "fixed_departure_packages",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
+        <div className="w-full md:overflow-auto  relative h-[45rem] rounded-2xl text-xl md:text-2xl p-10   bg-gradient-to-br from-yellow to-white min-h-[20rem] ">
           <p>Random tab</p>
+          <div className="flex items-center justify-center p-10 h-full w-full">
+
           <DummyContent />
+          </div>
         </div>
       ),
     },
@@ -81,7 +84,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
       title: "Reviews",
       value: "reviews",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl  bg-white bg-gradient-to-br from-yellow to-white">
+        <div className="w-full md:overflow-auto  relative h-[45rem] rounded-2xl p-10 text-xl md:text-2xl   bg-gradient-to-br from-yellow to-white min-h-[20rem] ">
           <p>Content tab</p>
           <DummyContent />
         </div>
@@ -90,7 +93,7 @@ export function SingleTourPage({ cardId }: { cardId: any }) {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 ">
+    <div className="h-[20rem] md:h-[40rem] xs:h-30rem [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 py-10 font-crimson font-normal min-h-[45rem] ">
       <Tabs tabs={tabs} />
     </div>
   );
@@ -101,9 +104,9 @@ const DummyContent = () => {
     <Image
       src="/logo.png"
       alt="dummy image"
-      width="900"
-      height="900"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      width="600"
+      height="600"
+      className="object-cover object-left-top h-[60%] flex md:h-[90%] absolute  inset-x-0 w-[90%] rounded-xl mx-auto"
     />
   );
 };

@@ -14,7 +14,7 @@ const Navbar = ({ className }: { className?: string }) => {
   // Mobile Responsive
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 468); // Adjust the threshold as per your requirements
+      setIsMobile(window.innerWidth < 468 || window.innerWidth< 720)  ; // Adjust the threshold as per your requirements
     };
 
     handleResize(); // Call initially to set the initial state

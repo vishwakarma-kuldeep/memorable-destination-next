@@ -11,7 +11,6 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    
   ],
   // darkMode: "class",
   lightMode: "class",
@@ -60,21 +59,20 @@ const config: Config = {
       pink: "#B1B1E7",
       "light-blue": "#7F7FD7",
     },
+    fontFamily: {
+      crimson: ["Crimson Text", ...defaultTheme.fontFamily.serif],
+    },
+    fontWeight: {
+      hairline: "100",
+      extralight: "200",
+      light: "300",
+      normal: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "700",
+    },
     // screens: {
-    //   sm: { min: "640px", max: "767px" },
-    //   // => @media (min-width: 640px and max-width: 767px) { ... }
-
-    //   md: { min: "768px", max: "1023px" },
-    //   // => @media (min-width: 768px and max-width: 1023px) { ... }
-
-    //   lg: { min: "1024px", max: "1279px" },
-    //   // => @media (min-width: 1024px and max-width: 1279px) { ... }
-
-    //   xl: { min: "1280px", max: "1535px" },
-    //   // => @media (min-width: 1280px and max-width: 1535px) { ... }
-
-    //   "2xl": { min: "1536px" },
-    //   // => @media (min-width: 1536px) { ... }
+    //   xs: '480px',
     // },
   },
 
